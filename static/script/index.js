@@ -556,7 +556,7 @@
 				context.textAlign = 'center';
 				context.textBaseline = 'middle';
 				context.fillStyle = '#FFF';
-				context.fillText('Pac-Man',this.x,this.y);
+				context.fillText('吃豆人 · Pac-Man',this.x,this.y);
 			}
 		});
 		// 提示
@@ -570,7 +570,7 @@
 					context.textAlign = 'center';
 					context.textBaseline = 'middle';
 					context.fillStyle = '#AAA';
-					context.fillText('Press Enter to start',this.x,this.y);
+					context.fillText('按下 回车 键开始',this.x,this.y);
 				}
 			}
 		});
@@ -747,7 +747,7 @@
 					context.textAlign = 'left';
 					context.textBaseline = 'bottom';
 					context.fillStyle = '#C33';
-					context.fillText('SCORE',this.x,this.y);
+					context.fillText('得分',this.x,this.y);
 					context.font = '24px PressStart2P';
 					context.textAlign = 'left';
 					context.textBaseline = 'top';
@@ -757,7 +757,7 @@
 					context.textAlign = 'left';
 					context.textBaseline = 'bottom';
 					context.fillStyle = '#C33';
-					context.fillText('LEVEL',this.x,this.y+72);
+					context.fillText('等级',this.x,this.y+72);
 					context.font = '24px PressStart2P';
 					context.textAlign = 'left';
 					context.textBaseline = 'top';
@@ -776,7 +776,7 @@
 						context.textAlign = 'left';
 						context.textBaseline = 'center';
 						context.fillStyle = '#FFF';
-						context.fillText('PAUSE',this.x,this.y);
+						context.fillText('暂停',this.x,this.y);
 					}
 				}
 			});
@@ -1043,7 +1043,7 @@
 				context.font = 'bold 48px PressStart2P';
 				context.textAlign = 'center';
 				context.textBaseline = 'middle';
-				context.fillText(_LIFE?'YOU WIN!':'GAME OVER',this.x,this.y);
+				context.fillText(_LIFE?'你赢了！':'游戏结束',this.x,this.y);
 			}
 		});
 		//记分
@@ -1055,7 +1055,7 @@
 				context.font = '20px PressStart2P';
 				context.textAlign = 'center';
 				context.textBaseline = 'middle';
-				context.fillText('FINAL SCORE: '+(_SCORE+50*Math.max(_LIFE-1,0)),this.x,this.y);
+				context.fillText('最终得分: '+(_SCORE+50*Math.max(_LIFE-1,0)),this.x,this.y);
 			}
 		});
 		//事件绑定
